@@ -14,6 +14,10 @@ export default class ColorPicker extends Component {
           ]
           return variety[Math.floor(Math.random() * variety.length)]
       }
-    
+      render () {
+		return (
+			<Colors color={this.state.color} />
+		);
+    }    
 }
   
